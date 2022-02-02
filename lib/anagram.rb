@@ -21,3 +21,8 @@ class Anagram
   # chars  used to return an array of characters in str.
 
   # sort alphabetically arranged
+
+  #from solution 
+  def match(array)
+    array.select {|x| x.split("").sort == @name.split("").sort}
+  end 
